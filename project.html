@@ -73,371 +73,533 @@
 
       <!--Header-->
       <h1 class="ui header">Project</h1>
-      <p>網站前後端開發(PHP, C#, Node.JS, Python, Vue)、APP、設計等皆可執行，歡迎與我們討論您的構想，由我們實現！</p>
+      <p>我們提供<strong>民間企業</strong>、<strong>政府單位</strong>與<strong>軟硬整合</strong>三大領域的技術服務。無論是網站前後端開發（PHP, C#, Node.JS,
+        Python, Vue）、APP 開發、公部門與法人機構合作研發，或是嵌入式設備及硬體周邊系統整合，歡迎與我們討論您的構想，由我們為您實現！</p>
 
-      <!--Project list-->
-
-      <div class="ui three link stackable cards project_main">
-        <div class="card programmer list-item">
-          <div class="image">
-            <img src="assets/images/work/example_2_1.png">
-          </div>
-          <div class="content">
-            <div class="header">程式維護案例</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              舉凡現有產品的維護、功能新增、系統優化、語言翻新等，我們都可以為您服務，並且提供專業的技術建議。
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              All language
-            </span>
-          </div>
-        </div>
-
-
-        <div class="card activity list-item">
-          <div class="image">
-            <img src="assets/images/work/example_1_1.png">
-          </div>
-          <div class="content">
-            <div class="header">活動頁面案例</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              您可以與我合作開發各種活動頁面，例如：抽獎、遊戲、投票、問卷調查等等，並且提供後台管理功能，讓您可以輕鬆管理活動。
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              Laravel, MySQL, JS
-            </span>
-          </div>
-        </div>
-
-        <div class="card youngbeauty list-item">
-          <div class="image">
-            <img src="assets/images/work/youngbeauty_1.png">
-          </div>
-          <div class="content">
-            <div class="header">耀群美學診所</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              與谷川行銷合作開發，提供診所介紹、醫師介紹等功能
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              Laravel, MySQL, JS
-            </span>
-          </div>
-        </div>
-
-        <div class="card bogres list-item">
-          <div class="image">
-            <img src="assets/images/work/bogres_1.png">
-          </div>
-          <div class="content">
-            <div class="header">波赫士領地</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              供使用者訂購每日限量蛋糕，及產品介紹等資訊
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              Firebase, Vue
-            </span>
-          </div>
-        </div>
-
-        <div class="card aipt list-item">
-          <div class="image">
-            <img src="assets/images/work/aipt_1.png">
-          </div>
-          <div class="content">
-            <div class="header">宏景國際集團-專利年費繳納平台</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              自動專利年費續約繳納系統、出版由我與夥伴共同開發，後轉交由宏景集團維護
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              PHP, MySQL, JS
-            </span>
-          </div>
-        </div>
-
-        <div class="card hanyuan list-item">
-          <div class="image">
-            <img src="assets/images/work/hanyuan.JPG">
-          </div>
-          <div class="content">
-            <div class="header">美濃涵園民宿</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              民宿官網，提供客房介紹等資訊
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-        </div>
-
-
+      <!--Category Menu-->
+      <div class="ui three item secondary pointing menu project-category-menu">
+        <a class="active item" data-category="enterprise">
+          <i class="building icon"></i> 民間企業
+        </a>
+        <a class="item" data-category="government">
+          <i class="university icon"></i> 政府單位
+        </a>
+        <a class="item" data-category="integration">
+          <i class="cogs icon"></i> 軟硬整合
+        </a>
       </div>
 
-      <!--Project data-->
-      <div class="ui one cards programmer-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/example_1_1.png">
-            <img style="display:none;" src="assets/images/work/example_2_1.png">
-            <img style="display:none;" src="assets/images/work/example_2_2.png">
-            <img style="display:none;" src="assets/images/work/example_2_3.png">
+        <!-- 1. 民間企業 Category -->
+        <div class="project-category-section" id="category-enterprise">
+          <div class="ui message">
+            <div class="header">民間企業專案開發與技術維護</div>
+            <p>針對各產業企業需求，提供客製化網站、電商與預約平台、行銷活動頁面開發，以及既有系統之維護、優化與翻新服務。</p>
           </div>
-          <div class="content">
-            <div class="header">程式維護案例</div>
-            <div class="meta">
-              <a>Website, APP</a>
+
+          <!--Project list-->
+          <div class="ui three link stackable cards project_main">
+            <div class="card programmer list-item">
+              <div class="image">
+                <img src="assets/images/work/example_2_1.png">
+              </div>
+              <div class="content">
+                <div class="header">程式維護案例</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  舉凡現有產品的維護、功能新增、系統優化、語言翻新等，我們都可以為您服務，並且提供專業的技術建議。
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  All language
+                </span>
+              </div>
             </div>
-            <div class="description">
-              <p>舉凡現有產品的維護、功能新增、系統優化、語言翻新等，我們都可以為您服務，並且提供專業的技術建議。</p>
+
+
+            <div class="card activity list-item">
+              <div class="image">
+                <img src="assets/images/work/example_1_1.png">
+              </div>
+              <div class="content">
+                <div class="header">活動頁面案例</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  您可以與我合作開發各種活動頁面，例如：抽獎、遊戲、投票、問卷調查等等，並且提供後台管理功能，讓您可以輕鬆管理活動。
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  Laravel, MySQL, JS
+                </span>
+              </div>
             </div>
+
+            <div class="card youngbeauty list-item">
+              <div class="image">
+                <img src="assets/images/work/youngbeauty_1.png">
+              </div>
+              <div class="content">
+                <div class="header">耀群美學診所</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  與谷川行銷合作開發，提供診所介紹、醫師介紹等功能
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  Laravel, MySQL, JS
+                </span>
+              </div>
+            </div>
+
+            <div class="card bogres list-item">
+              <div class="image">
+                <img src="assets/images/work/bogres_1.png">
+              </div>
+              <div class="content">
+                <div class="header">波赫士領地</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  供使用者訂購每日限量蛋糕，及產品介紹等資訊
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  Firebase, Vue
+                </span>
+              </div>
+            </div>
+
+            <div class="card aipt list-item">
+              <div class="image">
+                <img src="assets/images/work/aipt_1.png">
+              </div>
+              <div class="content">
+                <div class="header">宏景國際集團-專利年費繳納平台</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  自動專利年費續約繳納系統、出版由我與夥伴共同開發，後轉交由宏景集團維護
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  PHP, MySQL, JS
+                </span>
+              </div>
+            </div>
+
+            <div class="card hanyuan list-item">
+              <div class="image">
+                <img src="assets/images/work/hanyuan.JPG">
+              </div>
+              <div class="content">
+                <div class="header">美濃涵園民宿</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  民宿官網，提供客房介紹等資訊
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+            </div>
+
+
           </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              All language
-            </span>
+
+          <!--Project data-->
+          <div class="ui one cards programmer-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/example_1_1.png">
+                <img style="display:none;" src="assets/images/work/example_2_1.png">
+                <img style="display:none;" src="assets/images/work/example_2_2.png">
+                <img style="display:none;" src="assets/images/work/example_2_3.png">
+              </div>
+              <div class="content">
+                <div class="header">程式維護案例</div>
+                <div class="meta">
+                  <a>Website, APP</a>
+                </div>
+                <div class="description">
+                  <p>舉凡現有產品的維護、功能新增、系統優化、語言翻新等，我們都可以為您服務，並且提供專業的技術建議。</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  All language
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
           </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
+
+
+          <div class="ui one cards aipt-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/aipt_1.png">
+              </div>
+              <div class="content">
+                <div class="header">宏景國際集團-專利年費繳納平台</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  <p>自動專利年費續約繳納系統、出版由我與夥伴共同開發，後轉交由宏景集團維護</p>
+                  <a href="https://www.aiptfee.com/" target="_blank" class="ui green basic button">Check it out!</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
+          </div>
+
+          <div class="ui one cards activity-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/example_1_1.png">
+                <img style="display:none;" src="assets/images/work/example_1_2.png">
+                <img style="display:none;" src="assets/images/work/example_1_3.png">
+              </div>
+              <div class="content">
+                <div class="header">活動頁面合作範例</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  <p>您可以與我合作開發各種活動頁面，例如：抽獎、遊戲、投票、問卷調查等等，並且提供後台管理功能，讓您可以輕鬆管理活動。</p>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
+          </div>
+
+          <div class="ui one cards bogres-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/bogres_1.png">
+                <img style="display:none;" src="assets/images/work/bogres_2.png">
+              </div>
+              <div class="content">
+                <div class="header">波赫士領地</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  <p>我們的客戶，沈老闆是個點子王，因此找上我來幫他實現他的想法，我在這個專案上使用Firebase及Vue，建立前後台，可以即時更新蛋糕庫存，並且實作Email通知</p>
+                  <a href="https://www.jjjj.com.tw/" target="_blank" class="ui green basic button">Check it out!</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
+          </div>
+
+
+          <div class="ui one cards hanyuan-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/hanyuan1.jpg">
+                <img style="display:none;" src="assets/images/work/hanyuan2.jpg">
+                <img style="display:none;" src="assets/images/work/hanyuan3.jpg">
+              </div>
+              <div class="content">
+                <div class="header">美濃涵園民宿</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  <p>這是一間自然風格的民宿，不強調有多高檔豪華的設施，卻有著一個純樸的人情味，
+                    也因此在版面的設計上，就不營造出豪華的感覺。讓自然而舒服的顏色，寬距離的排版，就像民宿一般，
+                    帶給人們舒服的好印象</p>
+                  <a href="http://hanyuan.info" target="_blank" class="ui green basic button">Check it out!</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
+          </div>
+
+          <div class="ui one cards youngbeauty-info project-data" style="display:none;">
+            <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
+            <div class="card">
+              <div class="image project-image">
+                <img src="assets/images/work/youngbeauty_1.png">
+                <img style="display:none;" src="assets/images/work/youngbeauty_2.png">
+              </div>
+              <div class="content">
+                <div class="header">耀群美學診所</div>
+                <div class="meta">
+                  <a>Website</a>
+                </div>
+                <div class="description">
+                  <p>與谷川行銷合作開發一系列診所網站，提供診所介紹、醫師介紹、案例分享等功能，並且提供自訂非套版的後台，並且協助技術支援及網站代管。</p>
+                  <a href="https://www.youngbeauty.com.tw/" target="_blank" class="ui green basic button">Check it
+                    out!</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="project_description">
+                  <i class="code icon"></i>
+                  HTML5,CSS,JS
+                </span>
+              </div>
+              <div class="extra content">
+                <h5>參與者</h5>
+                <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
+                  <div class="detail">總製作</div>
+                </a>
+              </div>
+            </div>
+            <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
           </div>
         </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
-      </div>
 
+        <!-- 2. 政府單位 Category -->
+        <div class="project-category-section" id="category-government" style="display:none;">
+          <div class="ui piled segment" style="padding: 2.5em;">
+            <h2 class="ui header">
+              <i class="university icon"></i>
+              <div class="content">
+                政府單位與研究機構專案合作
+                <div class="sub header">Government Agencies &amp; Research Institutes Collaboration</div>
+              </div>
+            </h2>
+            <div class="ui divider"></div>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+              我們具備承接政府機關與財團法人研究機構專案之豐富經驗，並與<strong>工業技術研究院（工研院）</strong>進行深度合作開發，協助推動前瞻技術落地、內部資訊系統建置與數位轉型專案。
+            </p>
+            <p style="font-size: 1.05em; line-height: 1.8; color: #555;">
+              配合公部門與研究單位高標準的資安規範、系統穩定度與專案管理流程，我們提供從需求訪談、系統架構設計、客製化軟體研發到後續維運技術支援的完整服務。
+            </p>
 
-      <div class="ui one cards aipt-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/aipt_1.png">
-          </div>
-          <div class="content">
-            <div class="header">宏景國際集團-專利年費繳納平台</div>
-            <div class="meta">
-              <a>Website</a>
+            <div class="ui three column stackable grid" style="margin-top: 1.5em;">
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="sitemap teal icon"></i> 工研院合作開發</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      與<strong>工研院</strong>團隊緊密協作，參與研發專案之軟體系統架構設計、核心模組開發與整合測試，將研發成果轉化為高可用性的實務應用系統。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="server teal icon"></i> 公部門數位系統建置</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      依循政府專案規範與開發標準，打造高穩定性、易擴充之管理平台與資料處理系統，確保作業流程數位化與高效率運作。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="lock teal icon"></i> 資訊安全與保密承諾</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      政府單位及法人研究專案皆嚴格遵守保密協議（NDA）與資安防護準則，因此本區僅提供服務方向介紹，不公開具體專案細節。
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="description">
-              <p>自動專利年費續約繳納系統、出版由我與夥伴共同開發，後轉交由宏景集團維護</p>
-              <a href="https://www.aiptfee.com/" target="_blank" class="ui green basic button">Check it out!</a>
-            </div>
           </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
-          </div>
+          <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
         </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
-      </div>
 
-      <div class="ui one cards activity-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/example_1_1.png">
-            <img style="display:none;" src="assets/images/work/example_1_2.png">
-            <img style="display:none;" src="assets/images/work/example_1_3.png">
-          </div>
-          <div class="content">
-            <div class="header">活動頁面合作範例</div>
-            <div class="meta">
-              <a>Website</a>
+        <!-- 3. 軟硬整合 Category -->
+        <div class="project-category-section" id="category-integration" style="display:none;">
+          <div class="ui piled segment" style="padding: 2.5em;">
+            <h2 class="ui header">
+              <i class="cogs icon"></i>
+              <div class="content">
+                軟硬整合系統開發服務
+                <div class="sub header">Embedded Systems &amp; Peripheral Hardware Integration</div>
+              </div>
+            </h2>
+            <div class="ui divider"></div>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+              我們專注於<strong>嵌入式設備</strong>以及各類<strong>硬體周邊（如紙鈔機、電子密碼鎖等）</strong>的系統整合服務，為客戶打通底層硬體控制、通訊協定串接、終端操作介面與雲端後台管理的完整技術鏈。
+            </p>
+
+            <div class="ui two column stackable grid" style="margin-top: 1.5em;">
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="cube teal icon"></i> 嵌入式設備開發與整合</div>
+                    <div class="meta">Embedded Device Development</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      針對單板電腦（SBC）、工業電腦（IPC）與各類微控制器等嵌入式平台，開發高穩定度之控制程式與駐留服務，支援 RS-232 / RS-485、USB、GPIO、TCP/IP
+                      等多元硬體通訊介面整合。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="money teal icon"></i> 紙鈔機與金流周邊串接</div>
+                    <div class="meta">Bill Acceptor &amp; Payment Peripherals</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      提供<strong>紙鈔機</strong>（收鈔、辨識、防釣、狀態回報與異常處理）及自動化繳費機台周邊硬體整合，確保現金交易精準紀錄並與後台帳務系統即時同步。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="lock teal icon"></i> 電子密碼鎖與門禁控制</div>
+                    <div class="meta">Electronic Lock &amp; Access Control</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      整合<strong>電子密碼鎖</strong>、電磁鎖及感應設備，支援動態密碼派發、遠端開鎖控制、時效性權限管理與開關鎖狀態即時監控，適用於無人化空間、智慧旅宿與智取櫃等場域。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="content">
+                    <div class="header"><i class="desktop teal icon"></i> 雲端管理後台與遠端監控</div>
+                    <div class="meta">Cloud Backend &amp; Remote Monitoring</div>
+                    <div class="description" style="margin-top: 0.8em;">
+                      將現場端嵌入式設備與周邊硬體連接至雲端管理平台，提供設備狀態即時監控、異常告警、交易與門禁日誌查詢，以及遠端參數配置與更新機制。
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="description">
-              <p>您可以與我合作開發各種活動頁面，例如：抽獎、遊戲、投票、問卷調查等等，並且提供後台管理功能，讓您可以輕鬆管理活動。</p>
-            </div>
           </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
-          </div>
+          <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
         </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
-      </div>
 
-      <div class="ui one cards bogres-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/bogres_1.png">
-            <img style="display:none;" src="assets/images/work/bogres_2.png">
-          </div>
-          <div class="content">
-            <div class="header">波赫士領地</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              <p>我們的客戶，沈老闆是個點子王，因此找上我來幫他實現他的想法，我在這個專案上使用Firebase及Vue，建立前後台，可以即時更新蛋糕庫存，並且實作Email通知</p>
-              <a href="https://www.jjjj.com.tw/" target="_blank" class="ui green basic button">Check it out!</a>
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
-          </div>
-        </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
-      </div>
-
-
-      <div class="ui one cards hanyuan-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/hanyuan1.jpg">
-            <img style="display:none;" src="assets/images/work/hanyuan2.jpg">
-            <img style="display:none;" src="assets/images/work/hanyuan3.jpg">
-          </div>
-          <div class="content">
-            <div class="header">美濃涵園民宿</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              <p>這是一間自然風格的民宿，不強調有多高檔豪華的設施，卻有著一個純樸的人情味，
-                也因此在版面的設計上，就不營造出豪華的感覺。讓自然而舒服的顏色，寬距離的排版，就像民宿一般，
-                帶給人們舒服的好印象</p>
-              <a href="http://hanyuan.info" target="_blank" class="ui green basic button">Check it out!</a>
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
-          </div>
-        </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
-      </div>
-
-      <div class="ui one cards youngbeauty-info project-data" style="display:none;">
-        <button class="ui labeled icon button back-btn"><i class="left arrow icon"></i> Back </button>
-        <div class="card">
-          <div class="image project-image">
-            <img src="assets/images/work/youngbeauty_1.png">
-            <img style="display:none;" src="assets/images/work/youngbeauty_2.png">
-          </div>
-          <div class="content">
-            <div class="header">耀群美學診所</div>
-            <div class="meta">
-              <a>Website</a>
-            </div>
-            <div class="description">
-              <p>與谷川行銷合作開發一系列診所網站，提供診所介紹、醫師介紹、案例分享等功能，並且提供自訂非套版的後台，並且協助技術支援及網站代管。</p>
-              <a href="https://www.youngbeauty.com.tw/" target="_blank" class="ui green basic button">Check it out!</a>
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="project_description">
-              <i class="code icon"></i>
-              HTML5,CSS,JS
-            </span>
-          </div>
-          <div class="extra content">
-            <h5>參與者</h5>
-            <a class="ui teal image label" href="cch.html"><img src="assets/images/avatar/cch.png"> Chang-Chia Hsu
-              <div class="detail">總製作</div>
-            </a>
-          </div>
-        </div>
-        <span class="project_description">Copyright © 2026 群學開發有限公司.</span>
       </div>
     </div>
-  </div>
 
 
-  <!-- Content JS HERE !-->
-  <style>
-    .last.container {
-      margin-bottom: 300px !important;
-    }
+    <!-- Content JS HERE !-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.project-category-menu .item').click(function () {
+          var category = $(this).data('category');
+          $('.project-category-menu .item').removeClass('active');
+          $(this).addClass('active');
 
-    h1.ui.center.header {
-      margin-top: 3em;
-    }
+          // Reset any open project detail view back to the main project card list
+          $('.project-data').hide().removeClass('visible').removeClass('transition');
+          $('.project_main').show().addClass('stackable').removeClass('hidden');
 
-    h2.ui.center.header {
-      margin: 4em 0em 2em;
-    }
+          $('.project-category-section').hide();
+          $('#category-' + category).fadeIn(250);
+        });
+      });
+    </script>
+    <style>
+      .last.container {
+        margin-bottom: 300px !important;
+      }
 
-    h3.ui.center.header {
-      margin-top: 2em;
-      padding: 2em 0em;
-    }
+      h1.ui.center.header {
+        margin-top: 3em;
+      }
 
-    body {
-      font-family: "微軟正黑體", "STHeiti", Lato, sans-serif;
-    }
-  </style>
+      h2.ui.center.header {
+        margin: 4em 0em 2em;
+      }
+
+      h3.ui.center.header {
+        margin-top: 2em;
+        padding: 2em 0em;
+      }
+
+      body {
+        font-family: "微軟正黑體", "STHeiti", Lato, sans-serif;
+      }
+    </style>
 
 </body>
 
